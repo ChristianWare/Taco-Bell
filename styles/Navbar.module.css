@@ -1,11 +1,5 @@
 .headerContainer {
     background-color: transparent;
-    max-width: 1300px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-    
 }
 
 .navbar {
@@ -21,6 +15,7 @@
     cursor: pointer;
     position: relative;
     left: 1rem;
+    margin-left: 0px;
 }
 
 .navbarIcon {
