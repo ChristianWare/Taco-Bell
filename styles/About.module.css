@@ -1,0 +1,84 @@
+.aboutContainer {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.aboutLeft {
+   flex: 1;
+   display: flex;
+   align-items:flex-end;
+   justify-content:flex-end;
+   margin-left: 5rem;
+   margin-bottom: -2rem;
+}
+
+.title {
+    padding: 0.2rem;
+    width: 50%;
+    
+}
+
+.title h4 {
+    text-transform: uppercase;
+    color: var(--color3);
+    font-family: "Angled";
+    font-size: 5rem;
+    position: relative;
+    top: -16px;
+    width: 90%;
+}
+
+.pCont {
+    width: 50%;
+}
+
+.paraText {
+    color: var(--color3);
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: justify;
+    word-spacing: .01rem;
+}
+
+.aboutRight {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.imgCont {
+    width: 50%;
+}
+
+ .tacoImg {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}
+
+@media screen and (max-width: 968px) {
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title h4 {
+        width: 100%;
+    }
+
+    .aboutLeft {
+        margin-left: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+}
