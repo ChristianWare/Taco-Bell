@@ -1,9 +1,26 @@
-html,
+:root {
+  --color1: #eaa023;
+  --color2: #9D4EDD;
+  --color3: #f3fae1;
+  --color4: #0b090a;
+}
+
+@font-face {
+  font-family: "Angled";
+  src: url("/fonts/Angled.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
+
+/* Typography Scale */
+
+html {
+  font-size: 62.5%;
+
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
@@ -11,6 +28,234 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  /* transition: all 0.3s ease-in-out; */
+  -webkit-tap-highlight-color: transparent;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--color3);
+  background-color: var(--color1);
+}
+
+/* Button Component Start */
+.primaryBtn,
+.secondaryBtn,
+.tertiaryBtn {
+  position: relative;
+  display: block;
+  margin-bottom: 3rem;
+  padding: 0.7rem;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  transition: all .2s ease-in;
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover,
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  color: var(--color1);
+  transition: all .2s ease-in;
+}
+
+.primaryBtn::before,
+.primaryBtn::after,
+.secondaryBtn::before,
+.secondaryBtn::after,
+.tertiaryBtn::before,
+.tertiaryBtn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(50% - .4rem);
+  border: 3px solid var(--color1);
+  background-color: transparent;
+}
+
+
+.primaryBtn::before,
+.secondaryBtn::before,
+.tertiaryBtn::before {
+  top: 0;
+  border-bottom: 0;
+}
+
+.primaryBtn::after,
+.secondaryBtn::after,
+.tertiaryBtn::after {
+  bottom: 0;
+  border-top: 0;
+}
+
+.btnInner {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.primaryBtn .btnInner {
+  border: 1px solid var(--color3);
+  background-color: var(--color1);
+}
+
+.secondaryBtn .btnInner {
+  border: 1px solid var(--color3);
+}
+
+.tertiaryBtn .btnInner {
+  border: 1px solid var(--color3);
+  background-color: var(--color3);
+}
+
+.btnInner::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btnSlide {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 100%;
+  transform: skew(-10deg) translateX(-100%);
+  background-color: var(--color1);
+  transition: all .2s ease-in;
+}
+
+.primaryBtn .btnSlide {
+  background-color: var(--color3);
+}
+
+.btnContent {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1.9rem 3rem;
+  transition: all .2s ease-in;
+  white-space: nowrap;
+}
+
+.primaryBtn .btnContent {
+  color: var(--color4);
+}
+
+.secondaryBtn .btnContent {
+  color: var(--color3);
+}
+
+.tertiaryBtn .btnContent {
+  color: var(--color4);
+}
+
+.btnContent:hover {
+  color: var(--color3);
+}
+
+.primaryBtn:hover .btnSlide {
+  transform: skew(-10deg) translateX(0);
+}
+
+.secondaryBtn:hover .btnSlide {
+  transform: skew(-10deg) translateX(0);
+}
+
+.tertiaryBtn:hover .btnSlide {
+  transform: skew(-10deg) translateX(0);
+}
+
+.btnContent::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--color4);
+  transition: all .2s ease-in;
+}
+
+.primaryBtn:hover .btnContent::after {
+  background-color: white;
+}
+
+.primaryBtn:hover,
+.btnContent:hover {
+  color: var(--color4);
+}
+
+/* Button Component End */
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 }
