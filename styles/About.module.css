@@ -18,6 +18,7 @@
 .title {
     padding: 0.2rem;
     width: 50%;
+    border-bottom: 4mm double var(--color1);
     
 }
 
@@ -41,6 +42,9 @@
     font-size: 1.8rem;
     font-weight: 500;
     text-align: justify;
+    word-spacing: -.5px !important;
+    /* word-break: break-all; */
+    hyphens: auto;
     word-spacing: .01rem;
 }
 
@@ -48,6 +52,7 @@
     display: flex;
     align-items: flex-start;
     gap: 5rem;
+    margin-top: 2rem;
 }
 
 .imgCont {
@@ -81,4 +86,24 @@
     .aboutContainer {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutRight {
+        display: flex;
+        flex-direction: column;
+    }
+    .pCont {
+        width: 100%;
+    }
+
+    .imgCont {
+        width: 100%;
+    }
+
+    .tacoImg {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0%;
+    }
+
 }

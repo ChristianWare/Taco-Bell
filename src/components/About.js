@@ -19,12 +19,7 @@ function About() {
             became famous among residents for its hard-shelled tacos. Bell
             attempted to reverse-engineer the recipe, and eventually the owners
             allowed him to see how the tacos were made.
-            <br />
-            <br />
-            He took what he had learned and opened a new stand in 1951. The name
-            underwent several changes, from Taco-Tia through El Taco, before
-            settling on Taco Bell. Glen Bell opened the first Taco Bell in 1962
-            in Downey, California.
+            He took what he had learned and opened a new stand in 1951.
           </p>
         </div>
         <div className={styles.imgCont}>
