@@ -1,0 +1,99 @@
+.specialSection {
+    margin-top: 5rem;
+}
+
+/* .container {
+`
+} */
+
+.title {
+    text-align: center;
+    padding: 0.2rem;
+    border-bottom: 4mm double var(--color1);
+    /* width: fit-content; */
+}
+
+.title h4 {
+    text-transform: uppercase;
+    color: var(--color3);
+    font-family: "Angled";
+    font-size: 5rem;
+    /* white-space: nowrap; */
+}
+
+.displayFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+
+.chefItemImg {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.imgContainer {
+    width: 100%;
+}
+
+.imgContainer .img {
+    transition: all .5s ease;
+}
+
+.imgContainer .img:hover {
+    transform: scale(1.2);
+}
+
+.chefOverlay {
+    position: absolute;
+    background: rgba(234, 160, 35, 0.8);
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color4);
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out 0.1s;
+}
+
+.chefOverlay p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.chefItemImg:hover .chefOverlay {
+    transform: translateY(0);
+}
+
+.chefItemFooter {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.chefItemFooter h2 {
+    font-size: 1.4rem;
+    color: var(--color3);
+}
+
+.chefItemFooter h3 {
+    color: var(--color3);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .displayFlex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+    }
+}

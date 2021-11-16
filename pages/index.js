@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Navbar from '../src/components/Navbar'
-import Hero from '../src/components/Hero'
-import About from '../src/components/About';
-import Specialties from '../src/components/Specialties';
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Navbar from "../src/components/Navbar";
+import Hero from "../src/components/Hero";
+import About from "../src/components/About";
+import Specialties from "../src/components/Specialties";
+import { data } from "../data";
 
+export default function Home({ specialties }) {
 
-export default function Home() {
   return (
     <>
       <div className={styles.homeBgColor}>
@@ -18,10 +19,17 @@ export default function Home() {
           </Head>
           <Navbar />
           <Hero />
-          <About />    
-          <Specialties />     
+          <About />
+          <Specialties specialties={specialties} />
         </div>
       </div>
     </>
   );
 }
+
+export const getStaticProps = () => {
+  const specialties = data;
+  return {
+    props: { specialties },
+  };
+};
