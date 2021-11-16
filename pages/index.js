@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../src/components/Navbar'
 import Hero from '../src/components/Hero'
 import About from '../src/components/About';
+import Specialties from '../src/components/Specialties';
 
 
 export default function Home() {
@@ -17,7 +18,8 @@ export default function Home() {
           </Head>
           <Navbar />
           <Hero />
-          <About />         
+          <About />    
+          <Specialties />     
         </div>
       </div>
     </>

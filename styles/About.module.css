@@ -86,6 +86,24 @@
     .aboutContainer {
         flex-direction: column;
     }
+
+     .aboutRight {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .pCont {
+         width: 100%;
+     }
+
+     .imgCont {
+         width: 100%;
+     }
+
+     .tacoImg {
+         border-bottom-left-radius: 50%;
+         border-bottom-right-radius: 0%;
+     }
 }
 
 @media screen and (max-width: 480px) {
