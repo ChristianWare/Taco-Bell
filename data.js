@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    desc: "These are not your average taco truc tacos. We make ours with love. Try one today!",
+    desc: "These are not your average taco truck tacos. We make ours with love. Try one today!",
     src: "sauce.jpg",
     alt: "taco",
     width: "1272",
@@ -12,7 +12,7 @@ export const data = [
 
   {
     id: 2,
-    desc: "These are not your average taco truc tacos. We make ours with love. Try one today!",
+    desc: "Can you say Buuuurrrrito? Our Burritoes are full of the best ingredients. Get yours while we still have them. ",
     src: "tacovert1.jpg",
     alt: "taco",
     width: "1250",

@@ -20,7 +20,6 @@ function Specialties({ specialties }) {
                     width={special.width}
                     height={special.height}
                     layout='responsive'
-                    quality={100}
                   />
                 </div>
                 <div className={styles.chefOverlay}>

@@ -1,5 +1,5 @@
 .specialSection {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 /* .container {
@@ -63,9 +63,11 @@
 
 .chefOverlay p {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     width: 70%;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: .01rem;
     line-height: 1.7;
 }
 
@@ -79,18 +81,18 @@
 }
 
 .chefItemFooter h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--color3);
 }
 
 .chefItemFooter h3 {
     color: var(--color3);
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
     .displayFlex {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
