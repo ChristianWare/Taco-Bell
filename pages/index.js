@@ -6,7 +6,7 @@ import Hero from "../src/components/Hero";
 import About from "../src/components/About";
 import Specialties from "../src/components/Specialties";
 import { data } from "../data";
-import Menu from "../src/components/Menu";
+import MenuPage from "../src/components/MenuPage";
 
 
 export default function Home({ specialties }) {
@@ -25,7 +25,7 @@ export default function Home({ specialties }) {
           <Hero />
           <About />
           <Specialties specialties={specialties} />
-          <Menu />
+          <MenuPage />
         </div>
       </div>
     </>

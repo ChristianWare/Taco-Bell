@@ -5,12 +5,12 @@ function Button2(props) {
 
   return (
     <Link href={props.href}>
-      <p className={className}>
+      <a className={className} onClick={props.onClick}>
         <div className='btnInner'>
           <span className='btnSlide'></span>
           <span className='btnContent'>{props.label}</span>
         </div>
-      </p>
+      </a>
     </Link>
   );
 }

@@ -1,0 +1,26 @@
+.menuSection {
+    padding-top: 25rem;
+    width: 100%;
+}
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
+
+.title {
+    text-align: center;
+    padding: 0.2rem;
+    border-bottom: 4mm double var(--color1);
+    width: 100%;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    color: var(--color3);
+    font-family: "Angled";
+    font-size: 5rem;
+}

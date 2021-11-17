@@ -1,40 +1,36 @@
-import React, { useState } from "react";
-import styles from "../../styles/Menu.module.css";
-import { tacoMenu } from "../../data";
-import Categories from "./Categories";
+import Image from 'next/image'
+import styles from '../../styles/Menu.module.css'
 
-const allCategories = [
-  "all",
-  ...new Set(tacoMenu.map((item) => item.category)),
-];
-
-function Menu() {
-  const [menuItems, setMenuItems] = useState(tacoMenu);
-  const [activeCategory, setActiveCategory] = useState("");
-  const [categories, setCategories] = useState(allCategories);
-
-  const filteritems = (category) => {
-    setActiveCategory(category);
-    if (category === "all") {
-      setMenuItems(tacoMenu);
-      return;
-    }
-    const newItems = tacoMenu.filter((item) => item.category === category);
-    setMenuItems(newItems);
-  };
-
-  return (
-    <section className={styles.menuSection}>
-      <div className={styles.title}>
-        <h2>Menu List</h2>
-      </div>
-      <Categories
-        categories={categories}
-        activeCategory={activeCategory}
-        filterItems={filteritems}
-      />
-    </section>
-  );
+function Menu({items}) {
+    return (
+        <div className={styles.sectionCenter}>
+            {items.map((menuItem) => {
+                const { id, title, img, desc, width, height, price } = menuItem;
+                return (
+                  <article key={id} className={styles.menuItem}>
+                    <div className={styles.photoContainer}>
+                      <Image
+                        className={styles.photo}
+                        src={`/images/${img}`}
+                        alt={title}
+                        width={width}
+                        height={height}
+                        // objectFit= 'cover'
+                        layout='responsive'
+                      />
+                    </div>
+                    <div className={styles.itemInfo}>
+                      <header>
+                        <h4>{title}</h4>
+                        <h4 className={styles.price}>${price}</h4>
+                      </header>
+                      <p className={styles.itemText}>{desc}</p>
+                    </div>
+                  </article>
+                );
+            })}
+        </div>
+    )
 }
 
-export default Menu;
+export default Menu
