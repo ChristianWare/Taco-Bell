@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../src/components/Navbar";
@@ -5,8 +6,11 @@ import Hero from "../src/components/Hero";
 import About from "../src/components/About";
 import Specialties from "../src/components/Specialties";
 import { data } from "../data";
+import Menu from "../src/components/Menu";
+
 
 export default function Home({ specialties }) {
+
 
   return (
     <>
@@ -21,6 +25,7 @@ export default function Home({ specialties }) {
           <Hero />
           <About />
           <Specialties specialties={specialties} />
+          <Menu />
         </div>
       </div>
     </>

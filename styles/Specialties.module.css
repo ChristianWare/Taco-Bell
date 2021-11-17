@@ -1,5 +1,5 @@
 .specialSection {
-    padding-top: 5rem;
+    padding-top: 25rem;
 }
 
 /* .container {
@@ -97,5 +97,15 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chefOverlay p {
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: left;
+        word-spacing: .01rem;
+        line-height: 1.7;
     }
 }

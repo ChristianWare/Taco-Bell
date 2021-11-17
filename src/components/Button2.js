@@ -1,22 +1,22 @@
 import Link from "next/link";
 
-function Button(props) {
+function Button2(props) {
   const className = `a ${props.type}`;
 
   return (
     <Link href={props.href}>
-      <a className={className}>
+      <p className={className}>
         <div className='btnInner'>
           <span className='btnSlide'></span>
           <span className='btnContent'>{props.label}</span>
         </div>
-      </a>
+      </p>
     </Link>
   );
 }
 
-Button.defaultProps = {
+Button2.defaultProps = {
   type: "primaryBtn",
 };
 
-export default Button;
+export default Button2;
