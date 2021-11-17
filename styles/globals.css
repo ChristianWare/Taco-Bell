@@ -83,6 +83,11 @@ a {
 }
 
 /* Button Component Start */
+
+.btn2Container {
+  width: 100%;
+}
+
 .primaryBtn,
 .secondaryBtn,
 .tertiaryBtn {
