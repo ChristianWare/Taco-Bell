@@ -7,6 +7,7 @@ import About from "../src/components/About";
 import Specialties from "../src/components/Specialties";
 import { data } from "../data";
 import MenuPage from "../src/components/MenuPage";
+import Contact from "../src/components/Contact";
 
 
 export default function Home({ specialties }) {
@@ -26,6 +27,7 @@ export default function Home({ specialties }) {
           <About />
           <Specialties specialties={specialties} />
           <MenuPage />
+          <Contact />
         </div>
       </div>
     </>

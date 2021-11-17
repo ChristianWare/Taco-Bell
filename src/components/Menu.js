@@ -25,6 +25,12 @@ function Menu({items}) {
                         <h4 className={styles.price}>${price}</h4>
                       </header>
                       <p className={styles.itemText}>{desc}</p>
+                      <header>
+                        <h4>Nutrition</h4>
+                      </header>
+                      <p className={styles.itemTextNut}>
+                        Carbs: 150g  /  Protien: 30g  /  Calories: 200g /  Sodium: 50g
+                      </p>
                     </div>
                   </article>
                 );
