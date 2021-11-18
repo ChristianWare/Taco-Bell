@@ -23,7 +23,6 @@
 }
 
 .title h4 {
-    text-transform: uppercase;
     color: var(--color3);
     font-family: "Angled";
     font-size: 5rem;

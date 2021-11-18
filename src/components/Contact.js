@@ -1,5 +1,5 @@
 import styles from "../../styles/Contact.module.css";
-import Button2 from "./Button2";
+import Button from "./Button";
 import Image from "next/image";
 
 function Contact() {
@@ -8,7 +8,7 @@ function Contact() {
       <div className={styles.container}>
         <div className={styles.cards}>
             <Image
-              className={styles.imgwrapper}
+              className={styles.imgwrapper}  
               src={"/images/ss.jpg"}
               width='100%'
               height='100%'
@@ -24,9 +24,9 @@ function Contact() {
             vitae, est earum incidunt. Quis.
           </p>
           <div className={styles.btnContainer}>
-            <Button2 label='Twitter' type='primaryBtn' />
-            <Button2 label='Instagram' type='secondaryBtn' />
-            <Button2 label='Facebook' type='tertiaryBtn' />
+            <Button href='/' label='Twitter' type='primaryBtn' />
+            <Button href='/' label='Instagram' type='secondaryBtn' />
+            <Button href='/' label='Facebook' type='tertiaryBtn' />
           </div>
         </div>
       </div>
