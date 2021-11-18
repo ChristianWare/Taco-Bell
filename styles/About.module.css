@@ -46,6 +46,7 @@
     /* word-break: break-all; */
     hyphens: auto;
     word-spacing: .01rem;
+    width: 96%;
 }
 
 .aboutRight {
@@ -56,7 +57,14 @@
 }
 
 .imgCont {
-    width: 50%;
+    position: relative;
+    right: 2.5rem;
+    min-width: 30%;
+    max-width: 100%;
+    border: 10px solid var(--color1);
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
  .tacoImg {
@@ -97,12 +105,21 @@
      }
 
      .imgCont {
+         position: relative;
+         right: 0rem;
          width: 100%;
+         border: 10px solid var(--color1);
+         border-bottom-left-radius: 50%;
+         border-bottom-right-radius: 0%;
      }
 
      .tacoImg {
          border-bottom-left-radius: 50%;
          border-bottom-right-radius: 0%;
+     }
+
+     .paraText {
+         width: 100%;
      }
 }
 
@@ -123,5 +140,4 @@
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 0%;
     }
-
 }

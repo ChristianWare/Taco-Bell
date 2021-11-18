@@ -12,8 +12,8 @@ function Hero() {
         </p>
         <div className={styles.buttonContainer}>
           <Button type='primaryBtn' label='Menu' href='/' />
-          <Button type='secondaryBtn' label='Locations' href='/' />
-          <Button type='tertiaryBtn' label='Order Now' href='/' />
+          <Button type='secondaryBtn' label='Specials' href='/' />
+          <Button type='tertiaryBtn' label='Contact' href='/' />
         </div>
       </div>
     </header>

@@ -15,6 +15,13 @@
     max-width: 30%;
 }
 
+.container {
+    border: 10px solid var(--color1);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
 .photo {
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -63,6 +70,9 @@
     .itemInfo header {
         flex-direction: column;
     }
+    .container {
+        border: 10px solid var(--color1);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -76,6 +86,14 @@
          max-width: 100%;
      }
 
+     .container {
+         border: 10px solid var(--color1);
+         border-top-right-radius: 50%;
+         border-top-left-radius: 0%;
+         border-bottom-left-radius: 50%;
+         border-bottom-right-radius: 0%;
+     }
+ 
      .photo {
          border-top-right-radius: 50%;
          border-top-left-radius: 0%;
