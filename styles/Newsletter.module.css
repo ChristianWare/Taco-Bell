@@ -5,6 +5,7 @@
 .rowContainer {
     overflow: hidden;
     height: 56rem;
+    border: 10px solid var(--color3);
     border-radius: 20px;
     background: url('/images/bgimg.jpg') center / cover no-repeat;
     position: relative;

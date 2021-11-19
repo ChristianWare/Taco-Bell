@@ -9,6 +9,7 @@ import { data } from "../data";
 import MenuPage from "../src/components/MenuPage";
 import Contact from "../src/components/Contact";
 import Newsletter from "../src/components/Newsletter";
+import Footer from "../src/components/Footer";
 
 
 export default function Home({ specialties }) {
@@ -30,6 +31,7 @@ export default function Home({ specialties }) {
           <MenuPage />
           <Contact />
           <Newsletter />
+          <Footer />
         </div>
       </div>
     </>

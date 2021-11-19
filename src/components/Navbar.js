@@ -26,27 +26,27 @@ function Navbar() {
         >
           <li className={styles.navItem}>
             <Link href='#menu'>
-              <a onClick={openMenu}>MENU</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='#locations'>
               <a onClick={openMenu}>ABOUT</a>
             </Link>
           </li>
           <li className={styles.navItem}>
+            <Link href='#locations'>
+              <a onClick={openMenu}>SPECIALS</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
             <Link href='#delivery'>
-              <a onClick={openMenu}>DELIVERY</a>
+              <a onClick={openMenu}>MENU</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='#rewards'>
-              <a onClick={openMenu}>REWARDS</a>
+              <a onClick={openMenu}>SOCIALS</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='#nutrition'>
-              <a onClick={openMenu}>NUTRITION</a>
+              <a onClick={openMenu}>NEWSLETTER</a>
             </Link>
           </li>
         </ul>
