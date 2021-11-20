@@ -7,8 +7,9 @@ function Hero() {
       <div className={styles.container}>
         <h1>LIVE MAS</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint fuga
-          commodi id doloribus pariatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Our slogan animates our brand and encapsulates the company’s
+          philosophy of enriching the lives of our customers and employees in
+          everything we do.
         </p>
         <div className={styles.buttonContainer}>
           <Button type='primaryBtn' label='Menu' href='/' />

@@ -19,10 +19,11 @@ function Contact() {
         <div className={styles.details}>
           <h2>Follow us on Social Media</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            voluptatibus odit consequuntur enim voluptatem vel id repellat. Modi
-            recusandae dolor assumenda doloremque dolorem aliquid distinctio
-            vitae, est earum incidunt. Quis.
+            Taco Bell is a role model on social media. Taco Bell exists on
+            every major social media platform, including Facebook, Twitter,
+            YouTube, Instagram, Pinterest and LinkedIn. It's not just the
+            millions of followers, but the level of engagement and fan
+            conversations that the brand receives that makes them a winner.
           </p>
           <div className={styles.btnContainer}>
             <Button href='/' label='Twitter' type='primaryBtn' />

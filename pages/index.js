@@ -11,9 +11,10 @@ import Contact from "../src/components/Contact";
 import Newsletter from "../src/components/Newsletter";
 import Footer from "../src/components/Footer";
 
+import { createClient } from "contentful";
 
-
-export default function Home({ specialties }) {
+export default function Home({ specialties, tacoMenuItems }) {
+  console.log(tacoMenuItems);
   return (
     <>
       <div className={styles.homeBgColor}>
@@ -27,10 +28,10 @@ export default function Home({ specialties }) {
           <Hero />
           <About />
           <Specialties specialties={specialties} />
-          <MenuPage  />
+          <MenuPage />
           <Contact />
           <Newsletter />
-          <Footer />
+          <Footer tacoMenuItems={tacoMenuItems} />
         </div>
       </div>
     </>
@@ -39,8 +40,15 @@ export default function Home({ specialties }) {
 
 export async function getStaticProps() {
   const specialties = data;
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const res = await client.getEntries({ content_type: "menuItem" });
+
   return {
     props: {
+      tacoMenuItems: res.items,
       specialties,
     },
   };

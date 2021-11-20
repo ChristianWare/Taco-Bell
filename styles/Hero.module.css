@@ -1,9 +1,5 @@
 .header {
     min-height: 100vh;
-     /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-     url(../public/images/bgimg.jpg);
-     background-size: cover;
-     background-position: center; */
 }
 
 .container {
@@ -28,7 +24,7 @@
     color: var(--color3);
     font-size: 1.8rem;
     font-weight: 600;
-    text-align: justify;
+    /* text-align: justify; */
     word-spacing: -.5px !important;
     /* word-break: break-all; */
     hyphens: auto;

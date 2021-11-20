@@ -23,6 +23,7 @@
 
 .footerSub {
     font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
 .aboutContent p {
@@ -58,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 2rem;
-    gap: 3rem
+    /* gap: 3rem */
 }
 
 .linksContent ul li{

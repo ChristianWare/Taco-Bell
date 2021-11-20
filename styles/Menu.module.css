@@ -101,6 +101,11 @@
          border-bottom-right-radius: 0%;
      }
 
+     .itemInfo .itemText {
+         text-align: justify;
+         word-break: break-all;
+     }
+
      .itemInfo .itemTextNut {
          margin-bottom: -2rem;
      }
