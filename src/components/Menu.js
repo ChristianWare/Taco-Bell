@@ -5,7 +5,7 @@ function Menu({ items }) {
   return (
     <div className={styles.sectionCenter}>
       {items.map((menuItem) => {
-        const { id, title, img, desc, width, height, price } = menuItem;
+        const { id, title, img, desc, price, nutrition } = menuItem;
         return (
           <article key={id} className={styles.menuItem}>
             <div className={styles.photoContainer}>
@@ -14,9 +14,8 @@ function Menu({ items }) {
                   className={styles.photo}
                   src={`/images/${img}`}
                   alt={title}
-                  width={width}
-                  height={height}
-                  // objectFit= 'cover'
+                  width='100%'
+                  height='100%'
                   layout='responsive'
                 />
               </div>
@@ -30,9 +29,7 @@ function Menu({ items }) {
               <header>
                 <h4>Nutrition</h4>
               </header>
-              <p className={styles.itemTextNut}>
-                Carbs: 150g / Protien: 30g / Calories: 200g / Sodium: 50g
-              </p>
+              <p className={styles.itemTextNut}>{nutrition}</p>
             </div>
           </article>
         );

@@ -7,13 +7,14 @@ function Contact() {
     <div className={styles.contactContainer}>
       <div className={styles.container}>
         <div className={styles.cards}>
-            <Image
-              className={styles.imgwrapper}  
-              src={"/images/ss.jpg"}
-              width='100%'
-              height='100%'
-              layout='responsive'
-            />
+          <Image
+            className={styles.imgwrapper}
+            src={"/images/ss.jpg"}
+            width='100%'
+            height='100%'
+            layout='responsive'
+            priority='true'
+          />
         </div>
         <div className={styles.details}>
           <h2>Follow us on Social Media</h2>

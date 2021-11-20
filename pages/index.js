@@ -10,13 +10,10 @@ import MenuPage from "../src/components/MenuPage";
 import Contact from "../src/components/Contact";
 import Newsletter from "../src/components/Newsletter";
 import Footer from "../src/components/Footer";
-import MenuPageCont from "../src/components/MenuPageCont";
-
-import { createClient } from "contentful";
 
 
-export default function Home({ specialties, menuItems }) {
-  console.log(menuItems);
+
+export default function Home({ specialties }) {
   return (
     <>
       <div className={styles.homeBgColor}>
@@ -30,10 +27,9 @@ export default function Home({ specialties, menuItems }) {
           <Hero />
           <About />
           <Specialties specialties={specialties} />
-          <MenuPage />
+          <MenuPage  />
           <Contact />
           <Newsletter />
-          <MenuPageCont />
           <Footer />
         </div>
       </div>
@@ -43,18 +39,9 @@ export default function Home({ specialties, menuItems }) {
 
 export async function getStaticProps() {
   const specialties = data;
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  });
-  const res = await client.getEntries({ content_type: "menuItem" });
-
   return {
     props: {
-      menuItems: res.items,
       specialties,
     },
   };
 }
-
-
