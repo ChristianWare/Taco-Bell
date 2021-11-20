@@ -79,6 +79,7 @@
     .container p {
         margin-top: 2.5rem;
         text-align: justify;
+        /* width: 100%; */
     }
 }
 

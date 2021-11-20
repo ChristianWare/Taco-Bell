@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 function Button2(props) {
   const className = `a ${props.type}`;
 
