@@ -28,7 +28,7 @@ export default function Home({ specialties, tacoMenuItems }) {
           <Hero />
           <About />
           <Specialties specialties={specialties} />
-          <MenuPage />
+          <MenuPage tacoMenuItems={tacoMenuItems} />
           <Contact />
           <Newsletter />
           <Footer tacoMenuItems={tacoMenuItems} />

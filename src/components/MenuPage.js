@@ -7,7 +7,7 @@ import styles from "../../styles/MenuPage.module.css";
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 // console.log(allCategories);
 
-function MenuPage() {
+function MenuPage({ tacoMenuItems }) {
   const [menuItems, setMenuItems] = useState(items);
   // const [categories, setCategories] = useState([]);
 
@@ -27,7 +27,7 @@ function MenuPage() {
           <h2>Our Menu</h2>
         </div>
         <Categories filterItems={filterItems} />
-        <Menu items={menuItems} />
+        <Menu items={menuItems} tacoMenuItems={tacoMenuItems} />
       </section>
     </main>
   );
