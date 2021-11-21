@@ -39,7 +39,12 @@
 .aboutIcons .icon {
     margin-right: 1.5rem;
     font-size: 3rem;
-    cursor: pointer;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out   
+}
+
+.aboutIcons .icon:hover {
+    color: var(--color1)
 }
 
 .btnContainer {
@@ -62,11 +67,16 @@
     /* gap: 3rem */
 }
 
+
 .linksContent ul li{
     list-style: none;
     text-align: left;
     cursor: pointer;
     margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.linksContent ul li:hover {
+    color: var(--color1);
 }
 
 
@@ -89,6 +99,12 @@
     .footerItems {
         gap: 5rem;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerSub {
+        font-size: 1.5rem;
     }
 
 }

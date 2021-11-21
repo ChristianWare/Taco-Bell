@@ -3,8 +3,12 @@ import Button from "./Button";
 import Image from "next/image";
 
 function Contact() {
+  const twitterUrl = "https://twitter.com/tacobellnews";
+  const instaUrl = "https://www.instagram.com/tacobell/?hl=en";
+  const fbUrl = "https://www.facebook.com/tacobell/";
+
   return (
-    <div id='socials' className={styles.contactContainer}>
+    <div className={styles.contactContainer}>
       <div className={styles.container}>
         <div className={styles.cards}>
           <Image
@@ -17,18 +21,32 @@ function Contact() {
           />
         </div>
         <div className={styles.details}>
-          <h2>Follow us on Social Media</h2>
+          <h2 id='socials'>Follow us on Social Media</h2>
           <p>
             Taco Bell is a role model on social media. Taco Bell exists on every
-            major social media platform, including Facebook, Twitter, YouTube,
-            Instagram, Pinterest and LinkedIn. It's not just the millions of
-            followers, but the level of engagement and fan conversations that
-            the brand receives that makes them a winner.
+            major social media platform, including Facebook, Twitter, Instagram,
+            Pinterest and LinkedIn. It's not just the millions of followers, but
+            the level of engagement and fan conversation.
           </p>
           <div className={styles.btnContainer}>
-            <Button href='/' label='Twitter' type='primaryBtn' />
-            <Button href='/' label='Instagram' type='secondaryBtn' />
-            <Button href='/' label='Facebook' type='tertiaryBtn' />
+            <Button
+              href={twitterUrl}
+              label='Twitter'
+              type='primaryBtn'
+              target='_blank'
+            />
+            <Button
+              href={instaUrl}
+              label='Instagram'
+              type='secondaryBtn'
+              target='_blank'
+            />
+            <Button
+              href={fbUrl}
+              label='Facebook'
+              type='tertiaryBtn'
+              target='_blank'
+            />
           </div>
         </div>
       </div>

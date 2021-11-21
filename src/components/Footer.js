@@ -5,6 +5,11 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 import Button from "./Button";
 
 function Footer({ tacoMenuItems }) {
+
+  const twitterUrl = "https://twitter.com/tacobellnews";
+  const instaUrl = "https://www.instagram.com/tacobell/?hl=en";
+  const fbUrl = "https://www.facebook.com/tacobell/";
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
@@ -22,18 +27,18 @@ function Footer({ tacoMenuItems }) {
             and licensees.
           </p>
           <div className={styles.aboutIcons}>
-            <Link href='/'>
-              <a>
+            <Link href={fbUrl}>
+              <a target='_blank'>
                 <FaFacebook className={styles.icon} />
               </a>
             </Link>
-            <Link href='/'>
-              <a>
+            <Link href={instaUrl}>
+              <a target='_blank'>
                 <AiFillInstagram className={styles.icon} />
               </a>
             </Link>
-            <Link href='/'>
-              <a>
+            <Link href={twitterUrl}>
+              <a target='_blank'>
                 <FaTwitter className={styles.icon} />
               </a>
             </Link>
@@ -44,7 +49,7 @@ function Footer({ tacoMenuItems }) {
             <h4 className={styles.footerSub}>Menu</h4>
             {tacoMenuItems.map((tacoMenuItem) => (
               <ul key={tacoMenuItem.sys.id}>
-                <Link href='/'>
+                <Link href='#menu'>
                   <li>
                     <a>{tacoMenuItem.fields.title}</a>
                   </li>
@@ -55,29 +60,19 @@ function Footer({ tacoMenuItems }) {
           <div className={styles.linksContent}>
             <h4 className={styles.footerSub}>Specials</h4>
             <ul>
-              <Link href='/'>
+              <Link href='#specials'>
                 <li>
-                  <a>Home</a>
+                  <a>Loco's Burritos'</a>
                 </li>
               </Link>
-              <Link href='/'>
+              <Link href='#specials'>
                 <li>
-                  <a>About Us</a>
+                  <a>Loco's Tacos'</a>
                 </li>
               </Link>
-              <Link href='/'>
+              <Link href='#specials'>
                 <li>
-                  <a>Services</a>
-                </li>
-              </Link>
-              <Link href='/'>
-                <li>
-                  <a>Team</a>
-                </li>
-              </Link>
-              <Link href='/'>
-                <li>
-                  <a>Blog</a>
+                  <a>Sip Something</a>
                 </li>
               </Link>
             </ul>
@@ -85,14 +80,14 @@ function Footer({ tacoMenuItems }) {
           <div className={styles.linksContent}>
             <h4 className={styles.footerSub}>Newsletter</h4>
             <ul>
-              <Link href='/'>
+              <Link href='#socials'>
                 <li>
-                  <a>Home</a>
+                  <a>Deals</a>
                 </li>
               </Link>
-              <Link href='/'>
+              <Link href='#socials'>
                 <li>
-                  <a>About Us</a>
+                  <a>Discounts</a>
                 </li>
               </Link>
             </ul>
@@ -100,7 +95,7 @@ function Footer({ tacoMenuItems }) {
         </div>
       </div>
       <div className={styles.footerCopyRight}>
-        <small>TacoBell, Copyright &copy; js Year</small>
+        <small>TacoBell, Copyright &copy; {new Date().getFullYear()}</small>
       </div>
       <div className={styles.btnContainer}>
         <Button href='/' label='Back to Top' type='secondaryBtn' />

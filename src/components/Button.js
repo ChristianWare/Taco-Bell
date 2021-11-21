@@ -5,7 +5,7 @@ function Button(props) {
 
   return (
     <Link href={props.href}>
-      <a className={className}>
+      <a className={className} target={props.target}>
         <div className='btnInner'>
           <span className='btnSlide'></span>
           <span className='btnContent'>{props.label}</span>

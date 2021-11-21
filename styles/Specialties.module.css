@@ -64,9 +64,8 @@
 .chefOverlay p {
     font-weight: 700;
     font-size: 1.8rem;
-    width: 70%;
-    text-align: justify;
-    hyphens: auto;
+    padding: 1rem 3rem;
+    text-align: center;
     word-spacing: .01rem;
     line-height: 1.7;
 }
@@ -81,14 +80,14 @@
 }
 
 .chefItemFooter h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color3);
 }
 
 .chefItemFooter h3 {
     color: var(--color3);
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.99rem;
 }
 
 

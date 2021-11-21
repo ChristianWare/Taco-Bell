@@ -2,12 +2,14 @@ import styles from "../../styles/Specialties.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 function Specialties({ specialties }) {
   return (
     <section className={styles.specialSection}>
       <div className={styles.container}>
         <div className={styles.title}>
-          <h4 id='specials'>December Specials</h4>
+          <h4 id='specials'>Today's Specials</h4>
         </div>
         <div className={styles.displayFlex}>
           {specialties.map((special) => (

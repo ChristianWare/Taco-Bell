@@ -24,9 +24,11 @@
     color: var(--color3);
     font-size: 1.8rem;
     font-weight: 600;
-    word-spacing: -.5px !important;
-    hyphens: auto;
+    text-align: center;
+    /* word-spacing: -.5px !important; */
+    /* hyphens: auto; */
     margin-top: -1rem;
+    width: 80%;
 
 }
 
