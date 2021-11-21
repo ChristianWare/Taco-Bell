@@ -24,7 +24,7 @@ function MenuPage({ tacoMenuItems }) {
     <main>
       <section className={styles.menuSection}>
         <div className={styles.title}>
-          <h2>Our Menu</h2>
+          <h2 id='menu'>Our Menu</h2>
         </div>
         <Categories filterItems={filterItems} />
         <Menu items={menuItems} tacoMenuItems={tacoMenuItems} />

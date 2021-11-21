@@ -7,7 +7,7 @@ function Specialties({ specialties }) {
     <section className={styles.specialSection}>
       <div className={styles.container}>
         <div className={styles.title}>
-          <h4>December Specials</h4>
+          <h4 id='specials'>December Specials</h4>
         </div>
         <div className={styles.displayFlex}>
           {specialties.map((special) => (

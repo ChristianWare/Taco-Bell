@@ -3,7 +3,7 @@ import styles from "../../styles/About.module.css";
 
 function About() {
   return (
-    <section className={styles.aboutContainer}>
+    <section id='about' className={styles.aboutContainer}>
       <div className={styles.aboutLeft}>
         <div className={styles.title}>
           <h4>We've Been making delicious tacos' before you were born</h4>
@@ -18,8 +18,8 @@ function About() {
             restaurant called the Mitla Cafe, located across the street, which
             became famous among residents for its hard-shelled tacos. Bell
             attempted to reverse-engineer the recipe, and eventually the owners
-            allowed him to see how the tacos were made.
-            He took what he had learned and opened a new stand in 1951.
+            allowed him to see how the tacos were made. He took what he had
+            learned and opened a new stand in 1951.
           </p>
         </div>
         <div className={styles.imgCont}>

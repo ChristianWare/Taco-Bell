@@ -25,27 +25,27 @@ function Navbar() {
           onClick={openMenu}
         >
           <li className={styles.navItem}>
-            <Link href='#menu'>
+            <Link href='#about'>
               <a onClick={openMenu}>ABOUT</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='#locations'>
+            <Link href='#specials'>
               <a onClick={openMenu}>SPECIALS</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='#delivery'>
+            <Link href='#menu'>
               <a onClick={openMenu}>MENU</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='#rewards'>
+            <Link href='#socials'>
               <a onClick={openMenu}>SOCIALS</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='#nutrition'>
+            <Link href='#newsletter'>
               <a onClick={openMenu}>NEWSLETTER</a>
             </Link>
           </li>

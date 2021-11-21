@@ -7,7 +7,7 @@ function Hero() {
       <div className={styles.container}>
         <h1>LIVE MAS</h1>
         <p>
-          Our slogan animates our brand and encapsulates the company’s
+          Welcome to Taco Bell's redesigned website. "Live Mas" animates our brand and encapsulates the company’s
           philosophy of enriching the lives of our customers and employees in
           everything we do.
         </p>

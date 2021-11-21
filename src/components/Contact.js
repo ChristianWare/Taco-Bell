@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Contact() {
   return (
-    <div className={styles.contactContainer}>
+    <div id='socials' className={styles.contactContainer}>
       <div className={styles.container}>
         <div className={styles.cards}>
           <Image
@@ -19,11 +19,11 @@ function Contact() {
         <div className={styles.details}>
           <h2>Follow us on Social Media</h2>
           <p>
-            Taco Bell is a role model on social media. Taco Bell exists on
-            every major social media platform, including Facebook, Twitter,
-            YouTube, Instagram, Pinterest and LinkedIn. It's not just the
-            millions of followers, but the level of engagement and fan
-            conversations that the brand receives that makes them a winner.
+            Taco Bell is a role model on social media. Taco Bell exists on every
+            major social media platform, including Facebook, Twitter, YouTube,
+            Instagram, Pinterest and LinkedIn. It's not just the millions of
+            followers, but the level of engagement and fan conversations that
+            the brand receives that makes them a winner.
           </p>
           <div className={styles.btnContainer}>
             <Button href='/' label='Twitter' type='primaryBtn' />
