@@ -17,22 +17,27 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    gap: 3rem;
+    gap: 1rem;
     width: 45%;
 }
 
 .footerSub {
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding-bottom: 1rem;
+}
+
+.footerSub ul li a {
+    font-size: 1.3rem;
 }
 
 .aboutContent p {
     text-align: justify;
     word-break: break-all;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .aboutIcons {
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -49,7 +54,6 @@
 
 .btnContainer {
     margin-top: 3rem;
-    /* width: 50%; */
 }
 
 .footerItems {
@@ -72,6 +76,7 @@
     list-style: none;
     text-align: left;
     cursor: pointer;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     transition: all 0.3s ease-in-out;
 }
