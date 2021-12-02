@@ -1,11 +1,8 @@
 .contactContainer{
-    padding-top: 25rem;
+    padding-top: 15rem;
 }
 
 .container {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem; */
     display: flex;
     align-items:flex-start;
     gap: 5rem;
@@ -21,13 +18,13 @@
 }
 
 .details h2{
-        text-transform: uppercase;
-        color: var(--color3);
-        font-family: "Angled";
-        font-size: 5rem;
-        text-align: center;
-        position: relative;
-        top: -1.5rem;
+    text-transform: uppercase;
+    color: var(--color3);
+    font-family: "Angled";
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    top: -1.5rem;
 }
 
 .details p {

@@ -71,7 +71,7 @@
         flex-direction: column;
     }
     .container {
-        border: 10px solid var(--color1);
+        border: 5px solid var(--color1);
     }
 }
 
