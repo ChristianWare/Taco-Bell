@@ -59,12 +59,12 @@
     width: 45%;
 }
 
+
 .linksContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 2rem;
-    /* gap: 3rem */
 }
 
 

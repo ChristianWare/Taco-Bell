@@ -6,7 +6,7 @@ function About() {
     <section id='about' className={styles.aboutContainer}>
       <div className={styles.aboutLeft}>
         <div className={styles.title}>
-          <h4>We've Been making delicious tacos' before you were born</h4>
+          <h4>We've Been making tacos' before you were born</h4>
         </div>
       </div>
       <div className={styles.aboutRight}>
@@ -25,7 +25,7 @@ function About() {
         <div className={styles.imgCont}>
           <Image
             className={styles.tacoImg}
-            src='/images/taco1.jpeg'
+            src='/images/taco1.jpg'
             alt='taco pocket'
             width='100%'
             height='100%'

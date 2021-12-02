@@ -5,7 +5,6 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 import Button from "./Button";
 
 function Footer({ tacoMenuItems }) {
-
   const twitterUrl = "https://twitter.com/tacobellnews";
   const instaUrl = "https://www.instagram.com/tacobell/?hl=en";
   const fbUrl = "https://www.facebook.com/tacobell/";

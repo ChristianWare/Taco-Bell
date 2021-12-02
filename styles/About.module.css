@@ -58,7 +58,7 @@
 .imgCont {
     position: relative;
     right: 2.5rem;
-    min-width: 30%;
+    min-width: 28%;
     max-width: 100%;
     border: 10px solid var(--color1);
     border-top-right-radius: 50%;
