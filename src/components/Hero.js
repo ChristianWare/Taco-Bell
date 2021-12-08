@@ -9,7 +9,7 @@ function Hero() {
         <p lang='en'>
           Welcome to Taco Bell's redesigned website. "Live Mas" animates our
           brand and encapsulates the company’s philosophy of enriching the lives
-          of our customers and employees in everything we do.
+          of our customers in every meal we make.
         </p>
         <div className={styles.buttonContainer}>
           <Button type='tertiaryBtn' label='Menu' href='#menu' />

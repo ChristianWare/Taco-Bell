@@ -32,7 +32,7 @@
 
 .aboutContent p {
     text-align: justify;
-    word-break: break-all;
+    hyphens: auto;
     font-size: 1.3rem;
 }
 

@@ -14,7 +14,7 @@ function Footer({ tacoMenuItems }) {
       <div className={styles.footerContent}>
         <div className={styles.aboutContent}>
           <h4 className={styles.footerSub}>About Us</h4>
-          <p>
+          <p lang='en'>
             Taco Bell is an American-based chain of fast food restaurants
             originating in Irvine, California in 1962, by founder Glen Bell.
             Taco Bell is a subsidiary of Yum! Brands, Inc. The restaurants serve
@@ -95,8 +95,8 @@ function Footer({ tacoMenuItems }) {
       </div>
       <div className={styles.footerCopyRight}>
         <small>
-          TacoBell &copy; || Designed and Developed by Christian Ware{" "}
-          {new Date().getFullYear()}
+          TacoBell &copy;
+          {new Date().getFullYear()} || Designed and Developed by Christian Ware
         </small>
       </div>
       <div className={styles.btnContainer}>
