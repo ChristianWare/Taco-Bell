@@ -14,7 +14,6 @@ import Footer from "../src/components/Footer";
 import { createClient } from "contentful";
 
 export default function Home({ specialties, tacoMenuItems }) {
-  console.log(tacoMenuItems);
   return (
     <>
       <div className={styles.homeBgColor}>

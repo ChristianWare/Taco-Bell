@@ -138,7 +138,7 @@
 
     .navMenu a {
         margin-bottom: .5rem;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .navItem a::before {
@@ -157,10 +157,9 @@
     .navMenu a {
         background-color: transparent;
         padding: 0.5rem 3rem;
-        color: #480ca8;
+        color: var(--color4);
         margin-right: 4rem;
         margin-top: 1rem;
-        /* border: solid 2px var(--color4) */
     }
 }
 

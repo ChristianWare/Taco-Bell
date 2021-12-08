@@ -6,15 +6,15 @@ function Hero() {
     <header className={styles.header}>
       <div className={styles.container}>
         <h1>LIVE MAS</h1>
-        <p>
+        <p lang='en'>
           Welcome to Taco Bell's redesigned website. "Live Mas" animates our
           brand and encapsulates the company’s philosophy of enriching the lives
           of our customers and employees in everything we do.
         </p>
         <div className={styles.buttonContainer}>
-          <Button type='primaryBtn' label='Menu' href='#menu' />
+          <Button type='tertiaryBtn' label='Menu' href='#menu' />
           <Button type='secondaryBtn' label='Specials' href='#specials' />
-          <Button type='tertiaryBtn' label='Contact' href='#socials' />
+          <Button type='primaryBtn' label='Contact' href='#socials' />
         </div>
       </div>
     </header>
@@ -22,3 +22,4 @@ function Hero() {
 }
 
 export default Hero;
+

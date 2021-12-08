@@ -4,7 +4,12 @@ import Button2 from './Button2'
 function Categories({ filterItems }) {
   return (
     <div className={styles.btnContainer}>
-      <Button2 label='all' href='#' onClick={() => filterItems("all")} />
+      <Button2
+        type='tertiaryBtn'
+        label='all'
+        href='#'
+        onClick={() => filterItems("all")}
+      />
       <Button2
         type='secondaryBtn'
         label='breakfast'
@@ -12,7 +17,7 @@ function Categories({ filterItems }) {
         onClick={() => filterItems("breakfast")}
       />
       <Button2
-        type='tertiaryBtn'
+        type='primaryBtn'
         label='lunch'
         href='#'
         onClick={() => filterItems("lunch")}

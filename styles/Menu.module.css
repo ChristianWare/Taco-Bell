@@ -54,6 +54,8 @@
     margin-bottom: 5rem;
     font-size: 1.8rem;
     font-weight: 500;
+    text-align: justify;
+    hyphens: auto;
     word-spacing: -.5px !important;
 }
 
@@ -63,6 +65,8 @@
     margin-bottom: 5rem;
     font-size: 1.8rem;
     font-weight: 500;
+    text-align: justify;
+    word-break: break-all;
     word-spacing: -.5px !important;
 }
 
@@ -103,7 +107,7 @@
 
      .itemInfo .itemText {
          text-align: justify;
-         word-break: break-all;
+         hyphens: auto;
      }
 
      .itemInfo .itemTextNut {

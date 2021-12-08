@@ -25,7 +25,7 @@ function Menu({ items }) {
                 <h4>{title}</h4>
                 <h4 className={styles.price}>${price}</h4>
               </header>
-              <p className={styles.itemText}>{desc}</p>
+              <p className={styles.itemText} lang='en'>{desc}</p>
               <header>
                 <h4>Nutrition</h4>
               </header>

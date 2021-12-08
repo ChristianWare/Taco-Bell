@@ -5,7 +5,6 @@ import { items } from "../../data";
 import styles from "../../styles/MenuPage.module.css";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
-// console.log(allCategories);
 
 function MenuPage({ tacoMenuItems }) {
   const [menuItems, setMenuItems] = useState(items);

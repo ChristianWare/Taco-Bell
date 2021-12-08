@@ -94,7 +94,10 @@ function Footer({ tacoMenuItems }) {
         </div>
       </div>
       <div className={styles.footerCopyRight}>
-        <small>TacoBell, Copyright &copy; {new Date().getFullYear()}</small>
+        <small>
+          TacoBell &copy; || Designed and Developed by Christian Ware{" "}
+          {new Date().getFullYear()}
+        </small>
       </div>
       <div className={styles.btnContainer}>
         <Button href='/' label='Back to Top' type='secondaryBtn' />

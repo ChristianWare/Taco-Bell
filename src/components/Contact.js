@@ -22,7 +22,7 @@ function Contact() {
         </div>
         <div className={styles.details}>
           <h2 id='socials'>Follow us on Social Media</h2>
-          <p>
+          <p lang='en'>
             Taco Bell is a role model on social media. Taco Bell exists on every
             major social media platform, including Facebook, Twitter, Instagram,
             Pinterest and LinkedIn. It's not just the millions of followers, but
@@ -32,7 +32,7 @@ function Contact() {
             <Button
               href={twitterUrl}
               label='Twitter'
-              type='primaryBtn'
+              type='tertiaryBtn'
               target='_blank'
             />
             <Button
@@ -44,7 +44,7 @@ function Contact() {
             <Button
               href={fbUrl}
               label='Facebook'
-              type='tertiaryBtn'
+              type='primaryBtn'
               target='_blank'
             />
           </div>

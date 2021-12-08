@@ -6,12 +6,12 @@ function About() {
     <section id='about' className={styles.aboutContainer}>
       <div className={styles.aboutLeft}>
         <div className={styles.title}>
-          <h4>We've Been making tacos' before you were born</h4>
+          <h4>We've Been making tacos before you were born</h4>
         </div>
       </div>
       <div className={styles.aboutRight}>
         <div className={styles.pCont}>
-          <p className={styles.paraText}>
+          <p className={styles.paraText} lang='en'>
             Taco Bell was founded by Glen Bell, an entrepreneur who first opened
             a hot dog stand called Bell's Drive-In in San Bernardino, California
             in 1948. Bell watched long lines of customers at a Mexican
