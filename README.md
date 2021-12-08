@@ -16,8 +16,13 @@ This website is a redesign of Taco Bell's web page. I thought their website coul
 
 Here are a few images from Live Mas:
 
+Home Page
 ![Home Page](https://livemas.io/images/img1.png)
+
+Menu section
 ![Menu section](https://livemas.io/images/img2.png)
+
+Mobile Menu
 ![Mobile Menu](https://livemas.io/images/img3.png)
 
 ---
