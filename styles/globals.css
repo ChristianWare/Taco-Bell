@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Angled";
-  src: url("/fonts/Angled.otf");
+  src: url("../public/Fonts/Angled.otf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
