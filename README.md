@@ -2,7 +2,7 @@
 
 ## Demo Link:
 
-[telements.co](https://telements.co/)
+[livemas.io](https://livemas.io/)
 
 ---
 
@@ -16,9 +16,9 @@ This website is a redesign of Taco Bell's web page. I thought their website coul
 
 Here are a few images from Live Mas:
 
-![Home Page](https://telements.co/images/img1.png)
-![Menu section](https://telements.co/images/img4.png)
-![Mobile Menu](https://telements.co/images/404.png)
+![Home Page](https://livemas.io/images/img1.png)
+![Menu section](https://livemas.io/images/img2.png)
+![Mobile Menu](https://livemas.io/images/img3.png)
 
 ---
 
