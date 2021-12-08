@@ -13,6 +13,7 @@ function Contact() {
         <div className={styles.cards}>
           <Image
             className={styles.imgwrapper}
+            alt='taco bell logos'
             src={"/images/ss.jpg"}
             width='100%'
             height='100%'
@@ -25,8 +26,8 @@ function Contact() {
           <p lang='en'>
             Taco Bell is a role model on social media. Taco Bell exists on every
             major social media platform, including Facebook, Twitter, Instagram,
-            Pinterest and LinkedIn. It's not just the millions of followers, but
-            the level of engagement and fan conversation.
+            Pinterest and LinkedIn. It&apos;s not just the millions of
+            followers, but the level of engagement and fan conversation.
           </p>
           <div className={styles.btnContainer}>
             <Button

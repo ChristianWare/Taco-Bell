@@ -1,8 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Taco Bell Redesign
 
-## Getting Started
+## Demo Link:
 
-First, run the development server:
+[telements.co](https://telements.co/)
+
+---
+
+## Description:
+
+This website is a redesign of Taco Bell's web page. I thought thier websie could use a refesh so I took it upon myself to take on this challenge. I wanted the main focus on the site to be the menu, since the menu on Taco Bell's website is not currently on their home page (you have to navigate to another page to see it). The menu I created is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responive, and received high scores on Google's Page Speed Insights. There is also a breif "about" section, a social media section with links to external pages, and a newletter sign up area towards the bottom. Feel free to visit the demo link above. 
+
+---
+
+## Screen Shots:
+
+Here are a few images from Telements:
+
+![Home Page](https://telements.co/images/img1.png)
+![Menu section](https://telements.co/images/img4.png)
+![Mobile Menu](https://telements.co/images/404.png)
+
+---
+
+## Technologies:
+
+This Single Page Application was built with Next JS and React. The Data for the menu items is being pulled from a headless CMS, Contentful, with the "getStaticProps" function in NextJs. It is styled using CSS Modules. The dependencies used were react-icons, and the contentful CLI. The images were optimized for production, and are lazy loaded on the page. THis is all possible becasue of the Image component from Next JS. 
+
+---
+
+## How to Install :
+
+First, download or clone the repository. Then run the development server:
 
 ```bash
 npm run dev
@@ -12,23 +40,8 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Credits:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Christian Ware

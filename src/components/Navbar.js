@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <header className={styles.headerContainer}>
       <nav className={styles.navbar}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <span className={styles.navbarLogo}>
             <BsBellFill className={styles.navbarIcon} />
             <a>Taco Bell</a>

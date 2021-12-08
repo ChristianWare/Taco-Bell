@@ -20,10 +20,10 @@ function Footer({ tacoMenuItems }) {
             Taco Bell is a subsidiary of Yum! Brands, Inc. The restaurants serve
             a variety of Mexican-inspired foods, that include: tacos, burritos,
             quesadillas, nachos, novelty and specialty items, along with a
-            variety of "value menu" items. As of 2018, Taco Bell serves over two
-            billion customers each year, at 7,072 restaurants, more than 93
-            percent of which are owned and operated by independent franchisees
-            and licensees.
+            variety of &apos;value menu&apos; items. As of 2018, Taco Bell
+            serves over two billion customers each year, at 7,072 restaurants,
+            more than 93 percent of which are owned and operated by independent
+            franchisees and licensees.
           </p>
           <div className={styles.aboutIcons}>
             <Link href={fbUrl}>
@@ -48,7 +48,7 @@ function Footer({ tacoMenuItems }) {
             <h4 className={styles.footerSub}>Menu</h4>
             {tacoMenuItems.map((tacoMenuItem) => (
               <ul key={tacoMenuItem.sys.id}>
-                <Link href='#menu'>
+                <Link href='#menu' passHref>
                   <li>
                     <a>{tacoMenuItem.fields.title}</a>
                   </li>
@@ -59,17 +59,17 @@ function Footer({ tacoMenuItems }) {
           <div className={styles.linksContent}>
             <h4 className={styles.footerSub}>Specials</h4>
             <ul>
-              <Link href='#specials'>
+              <Link href='#specials' passHref>
                 <li>
-                  <a>Loco's Burritos'</a>
+                  <a>Loco&apos;s Burritos&apos;</a>
                 </li>
               </Link>
-              <Link href='#specials'>
+              <Link href='#specials' passHref>
                 <li>
-                  <a>Loco's Tacos'</a>
+                  <a>Loco&apos;s Tacos&apos;</a>
                 </li>
               </Link>
-              <Link href='#specials'>
+              <Link href='#specials' passHref>
                 <li>
                   <a>Sip Something</a>
                 </li>
@@ -79,12 +79,12 @@ function Footer({ tacoMenuItems }) {
           <div className={styles.linksContent}>
             <h4 className={styles.footerSub}>Newsletter</h4>
             <ul>
-              <Link href='#socials'>
+              <Link href='#socials' passHref>
                 <li>
                   <a>Deals</a>
                 </li>
               </Link>
-              <Link href='#socials'>
+              <Link href='#socials' passHref>
                 <li>
                   <a>Discounts</a>
                 </li>

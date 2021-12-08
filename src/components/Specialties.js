@@ -9,7 +9,7 @@ function Specialties({ specialties }) {
     <section className={styles.specialSection}>
       <div className={styles.container}>
         <div className={styles.title}>
-          <h4 id='specials'>Today's Specials</h4>
+          <h4 id='specials'>Today&apos;s Specials</h4>
         </div>
         <div className={styles.displayFlex}>
           {specialties.map((special) => (
@@ -18,6 +18,7 @@ function Specialties({ specialties }) {
                 <div className={styles.imgContainer}>
                   <Image
                     className={styles.img}
+                    alt='special Item'
                     src={`/images/${special.src}`}
                     width={special.width}
                     height={special.height}

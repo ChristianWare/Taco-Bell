@@ -16,7 +16,7 @@ function Newsletter() {
     <section id='newsletter' className={styles.newsletterSection}>
       <div className={styles.rowContainer}>
         <div className={styles.col}>
-          <h2>Join Our Newsletter for deals n' discounts!</h2>
+          <h2>Join Our Newsletter for deals n&apos; discounts!</h2>
           <form>
             <input
               type='email'
@@ -24,7 +24,11 @@ function Newsletter() {
               ref={emailInput}
             />
             <br />
-            <Button2 type='secondaryBtn' label={ done ? 'clear' : 'Sign Up'} onClick={clearInput} />
+            <Button2
+              type='secondaryBtn'
+              label={done ? "clear" : "Sign Up"}
+              onClick={clearInput}
+            />
             <p className={styles.response}>
               {done && "Thank You, we will be in touch with you soon."}
             </p>
