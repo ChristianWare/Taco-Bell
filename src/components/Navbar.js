@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import { BsBellFill } from "react-icons/bs";
@@ -6,6 +6,17 @@ import { BsBellFill } from "react-icons/bs";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (window.innerWidth <= 953 && isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+    const handleResize = () => setIsOpen(false);
+    window.addEventListener("resize", handleResize);
+  }, [isOpen]);
 
   return (
     <header className={styles.headerContainer}>
